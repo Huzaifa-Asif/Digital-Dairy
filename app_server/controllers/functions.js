@@ -5,10 +5,10 @@ var serviceProviderController = require('../controllers/serviceProvider.js');
 var emailAccount =require('../../emails/account.js');
 var serviceProvider=require('../models/serviceProvider.js');
 var admin = require('firebase-admin');
-var serviceAccount = require("../firebaseadmin.json");
+var serviceAccount = require("../firebasekey.json");
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
-    databaseURL: "https://sport-x-a7672.firebaseio.com"
+    databaseURL: "https://digital-dairy-384f9.firebaseio.com"
   });
 
 
