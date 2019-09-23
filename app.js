@@ -54,7 +54,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // routes call
 app.get('/', (req, res) => {
   res.json({
-    message: "Welcome to Digital Dairy Backend Backend"
+    message: "Welcome to Digital Dairy Backend"
 })
 });
 
