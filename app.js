@@ -71,8 +71,6 @@ app.use('/revenuecategory', routeRevenueCategory);
 app.use('/servicecategory', routeServiceCategory);
 app.use('/serviceprovider', routeServiceProvider);
 app.use('/shared', routeShared);
-app.use('/team', routeTeam);
-app.use('/tournament', routeTournament);
 app.use('/bookingsetting',routeBookingSetting);
 app.use('/fixture',routeFixture);
 
@@ -95,9 +93,9 @@ app.use(function(err, req, res, next) {
 
 // cloudinary parameters
 cloudinary.config({
-    cloud_name: 'the-a-web',
-    api_key: '818857629118551',
-    api_secret: 'kv5t1reOY_mIfiiID7v-5mhLAps' 
+    cloud_name: 'dzc8qnuq1',
+    api_key: '988132422922991',
+    api_secret: 'Ws_1WDrkO9VEp4USKKlX2zT-Y8A' 
   });
 
 
