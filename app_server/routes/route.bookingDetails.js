@@ -87,17 +87,17 @@ router.patch('/update_bookingState/:id', function(req,res)
                     if(state=="accepted")
                     {
                         let body = "Order Request of: " + bookingDetails.productName + " - " + bookingDetails.productQuantity + " on: " + bookingDetails.date;
-                        functions.notification("Booking Accepted",body,token)
+                        functions.notification("Order Accepted",body,token)
                     }
                     else if(state==("completed"))
                     {
                         let body = "Order Request of: " + bookingDetails.productName + " - " + bookingDetails.productQuantity + " on: " + bookingDetails.date;
-                        functions.notification("Booking Completed",body,token)
+                        functions.notification("Order Completed",body,token)
                     }
                     else if(state==("canceled"))
                     {
                         let body = "Order Request of: " + bookingDetails.productName + " - " + bookingDetails.productQuantity + " on: " + bookingDetails.date;
-                        functions.notification("Booking Cancelled",body,token)
+                        functions.notification("Order Cancelled",body,token)
                     }
                     
                     res.json(
