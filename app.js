@@ -20,7 +20,7 @@ var routeRevenueCategory = require('./app_server/routes/route.revenueCategory.js
 var routeServiceCategory = require('./app_server/routes/route.serviceCategory.js');
 var routeServiceProvider = require('./app_server/routes/route.serviceProvider.js');
 var routeShared = require('./app_server/routes/route.shared.js');
-var routeBookingSetting = require('./app_server/routes/route.bookingSetting.js');
+
 
 
 
@@ -69,7 +69,7 @@ app.use('/revenuecategory', routeRevenueCategory);
 app.use('/servicecategory', routeServiceCategory);
 app.use('/serviceprovider', routeServiceProvider);
 app.use('/shared', routeShared);
-app.use('/bookingsetting',routeBookingSetting);
+
 
 
 // catch 404 and forward to error handler

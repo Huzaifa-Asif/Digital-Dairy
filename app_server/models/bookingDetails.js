@@ -12,6 +12,9 @@ const bookingDetailsSchema = new schema({
     bookingType:{
         type:String
     },
+    productName:{
+        type:String
+    },
     date:{
         type:String
     },
