@@ -36,7 +36,7 @@ router.post('/add_bookingDetails', function (req, res) {
 
                     let token = serviceProvider.token;
                     
-                    let body = "Booking Request of: " + bookingDetails.productQuantity + " on: " + bookingDetails.date;
+                    let body = "Order Request of: " + bookingDetails.productName +" - "+ bookingDetails.productQuantity + " on: " + bookingDetails.date;
     
                     
                     functions.notification("New Booking Notification",body,token)
@@ -86,17 +86,17 @@ router.patch('/update_bookingState/:id', function(req,res)
                     
                     if(state=="accepted")
                     {
-                        let body = "Booking Request of: " + bookingDetails.productQuantity + " on: " + bookingDetails.date;
+                        let body = "Order Request of: " + bookingDetails.productName + " - " + bookingDetails.productQuantity + " on: " + bookingDetails.date;
                         functions.notification("Booking Accepted",body,token)
                     }
                     else if(state==("completed"))
                     {
-                        let body = "Booking Request of: " + bookingDetails.productQuantity + " on: " + bookingDetails.date;
+                        let body = "Order Request of: " + bookingDetails.productName + " - " + bookingDetails.productQuantity + " on: " + bookingDetails.date;
                         functions.notification("Booking Completed",body,token)
                     }
                     else if(state==("canceled"))
                     {
-                        let body = "Booking Request of: " + bookingDetails.productQuantity + " on: " + bookingDetails.date;
+                        let body = "Order Request of: " + bookingDetails.productName + " - " + bookingDetails.productQuantity + " on: " + bookingDetails.date;
                         functions.notification("Booking Cancelled",body,token)
                     }
                     
