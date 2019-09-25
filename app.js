@@ -9,11 +9,9 @@ const mongoose = require('mongoose');
 // routes
 var routeAdmin = require('./app_server/routes/route.admin.js');
 var routeBookingDetails = require('./app_server/routes/route.bookingDetails.js');
-var routeConversation = require('./app_server/routes/route.conversation.js');
 var routeCustomer = require('./app_server/routes/route.customer.js');
 var routeExpense = require('./app_server/routes/route.expense.js');
 var routeExpenseCategory = require('./app_server/routes/route.expenseCategory.js');
-var routeMessage = require('./app_server/routes/route.message.js');
 var routeRatingAndFeedback = require('./app_server/routes/route.ratingAndFeedback.js');
 var routeRevenue = require('./app_server/routes/route.revenue.js');
 var routeRevenueCategory = require('./app_server/routes/route.revenueCategory.js');
@@ -58,11 +56,9 @@ app.get('/', (req, res) => {
 
 app.use('/admin', routeAdmin);
 app.use('/bookingdetails', routeBookingDetails);
-app.use('/conversation', routeConversation);
 app.use('/customer', routeCustomer);
 app.use('/expense', routeExpense);
 app.use('/expensecategory', routeExpenseCategory);
-app.use('/message', routeMessage);
 app.use('/ratingandfeedback', routeRatingAndFeedback);
 app.use('/revenue', routeRevenue);
 app.use('/revenuecategory', routeRevenueCategory);
@@ -91,7 +87,7 @@ app.use(function(err, req, res, next) {
 
 // cloudinary parameters
 cloudinary.config({
-    cloud_name: 'dzc8qnuq1',
+    cloud_name: 'digital-dairy',
     api_key: '988132422922991',
     api_secret: 'Ws_1WDrkO9VEp4USKKlX2zT-Y8A' 
   });

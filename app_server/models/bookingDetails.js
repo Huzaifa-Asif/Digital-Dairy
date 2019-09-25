@@ -9,7 +9,7 @@ const bookingDetailsSchema = new schema({
       type:String,
       default:"pending"
     },
-    bookingType:{
+    productQuantity:{
         type:String
     },
     productName:{
