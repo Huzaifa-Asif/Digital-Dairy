@@ -15,6 +15,15 @@ const bookingDetailsSchema = new schema({
     productName:{
         type:String
     },
+    orderNote:{
+        type:String
+    },
+    orderLat:{
+        type:String
+    },
+    orderLon:{
+        type:String
+    },
     date:{
         type:String
     },
