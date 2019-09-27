@@ -19,10 +19,10 @@ const bookingDetailsSchema = new schema({
         type:String
     },
     orderLat:{
-        type:String
+        type:Number
     },
     orderLon:{
-        type:String
+        type:Number
     },
     date:{
         type:String
