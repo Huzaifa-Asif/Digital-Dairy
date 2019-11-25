@@ -9,6 +9,10 @@ const bookingDetailsSchema = new schema({
       type:String,
       default:"pending"
     },
+    paymentStatus:{
+        type:String,
+        default:"pending"
+    },
     productQuantity:{
         type:String
     },
