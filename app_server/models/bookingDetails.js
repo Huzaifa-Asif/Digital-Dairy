@@ -13,6 +13,9 @@ const bookingDetailsSchema = new schema({
         type:String,
         default:"pending"
     },
+    price:{
+        type:Number
+    },
     productQuantity:{
         type:String
     },
