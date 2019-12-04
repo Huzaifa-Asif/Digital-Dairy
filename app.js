@@ -19,6 +19,7 @@ var routeServiceCategory = require('./app_server/routes/route.serviceCategory.js
 var routeServiceProvider = require('./app_server/routes/route.serviceProvider.js');
 var routeShared = require('./app_server/routes/route.shared.js');
 var routeLiveStream = require('./app_server/routes/route.livestream.js');
+var routePrice = require('./app_server/routes/route.price.js');
 
 
 
@@ -66,6 +67,7 @@ app.use('/servicecategory', routeServiceCategory);
 app.use('/serviceprovider', routeServiceProvider);
 app.use('/shared', routeShared);
 app.use('/livestream', routeLiveStream);
+app.use('/price', routePrice);
 
 
 // catch 404 and forward to error handler
