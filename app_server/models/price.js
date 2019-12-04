@@ -5,7 +5,7 @@ const schema = mongoose.Schema;
 // Service Category Schema
 
 const priceSchema = new schema({
-    malik:{
+    milk:{
         type:Number
     },
     yogurt:{
